@@ -96,6 +96,9 @@ return list;
 
     public void deleteAllTeachers() {
 
+        for(Teacher teacher : teacherList){
+            deleteTeacherByName(teacher.getName());
+        }
 
     }
 }
