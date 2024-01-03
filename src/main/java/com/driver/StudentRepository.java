@@ -95,8 +95,8 @@ return list;
 
 
     public void deleteAllTeachers() {
-
-        for(Teacher teacher : teacherList){
+         while(!teacherList.isEmpty()){
+             Teacher teacher=teacherList.get(0);
             deleteTeacherByName(teacher.getName());
         }
 
